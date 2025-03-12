@@ -1,6 +1,7 @@
 html {
     font-family: "Montserrat", sans-serif;
     font-size: 1rem; 
+    
 }
 
 body, html {
@@ -13,14 +14,17 @@ body, html {
 main {
     max-width: 90rem; 
     margin: 0 auto; 
+
 }
+
 
 * {
     box-sizing: border-box;
 }
 
 .header {
-    width: 100%;
+    width:100%;
+    height: 100%;
     height: 4.5rem; 
     background: rgba(2, 162, 143, 1);
     color: white;
@@ -34,8 +38,12 @@ main {
     grid-template-columns: 2fr 1fr;
     gap: 1.25rem; 
     align-items: start;
-    margin-top: 1.25rem; 
-}
+    margin-top: 1.25rem;
+    margin-left: 2rem; 
+    margin-right: 2rem;
+} 
+
+
 
 .banner img {
     width: 100%;
@@ -58,6 +66,40 @@ main {
     font-weight: bold;
     border-radius: 1rem;
 }
+
+.title-container {
+    display: flex;
+    justify-content: space-between; /* Título à esquerda, link à direita */
+    align-items: center; /* Alinha verticalmente */
+    background: rgba(2, 162, 143, 1); /* Mantém a cor do balão */
+    color: white;
+    padding: 0.75rem 1rem;
+    font-size: 1.125rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    width: 100%;
+    white-space: nowrap; /* Evita que o texto quebre */
+}
+
+.title-container h2 {
+    margin: 0;
+    font-size: 1.125rem;
+}
+
+.title-container nav {
+    margin: 0;
+    padding: 0;
+}
+
+.title-container nav a {
+    font-size: 1rem; /* Tamanho do link */
+    text-decoration: underline; /* Deixa o link sublinhado */
+    color: white; /* Mantém a cor branca */
+    font-weight: normal; /* Não precisa ser negrito */
+    list-style: none; /* Remove qualquer marcador de lista */
+    display: inline-block; /* Garante que o link fique na mesma linha */
+}
+
 
 .popular-posts img {
     width: 100%;
